@@ -30,7 +30,7 @@ neorv32-hackathon-quintauris/
 │   │   ├── src/neorv32_arty_top.vhd      top-level with TODOs (GPIO/LED/button mapping)
 │   │   ├── xdc/arty_a7_100t.xdc          constraints with TODOs (LED/button pins)
 │   │   ├── sw/main.c, Makefile            firmware with TODOs (LED sequence in C)
-│   │   └── INSTRUCCIONES.md              how to compile and upload, to hand out
+│   │   └── INSTRUCTIONS.md               how to compile and upload, to hand out
 │   ├── ejercicio1_solucion/           complete solution for Exercise 1 (for the instructor)
 │   ├── ejercicio2/                    EXERCISE 2 — student template
 │   │   ├── src/neorv32_arty_top.vhd      top-level with a TODO (missing RISCV_ISA_* generic)
@@ -38,7 +38,6 @@ neorv32-hackathon-quintauris/
 │   │   └── sw/main.c, neorv32_exe.bin     firmware to READ (already compiled, do not touch)
 │   └── ejercicio2_solucion/           complete solution for Exercise 2 (for the instructor)
 │       └── src/, xdc/, sw/               same files, with the correct generic
-├── ENUNCIADOS.md                      both exercise statements, for slides
 └── README.md                          this file
 ```
 
@@ -264,8 +263,8 @@ Exercise 2 doesn't require compiling anything — `sw/neorv32_exe.bin`
 already comes ready. This section only applies to
 `exercises/ejercicio1/sw/`.
 
-`exercises/ejercicio1/INSTRUCCIONES.md` has a short (Spanish) version of
-these same steps, meant to be handed directly to students.
+`exercises/ejercicio1/INSTRUCTIONS.md` has a short version of these same
+steps, meant to be handed directly to students.
 
 A RISC-V GCC compiler needs to be installed. The one recommended by
 NEORV32 is xPack's prebuilt package (prefix `riscv-none-elf-`), which is
