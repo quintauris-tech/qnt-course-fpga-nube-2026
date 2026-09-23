@@ -1,0 +1,34 @@
+# Software build artifacts
+build/
+*.elf
+*.bin
+*.asm
+*.hex
+*.coe
+*.mem
+*.mif
+sw/image_gen/image_gen
+sw/image_gen/image_gen.exe
+# `make bootloader` writes this locally before installing it into rtl/core/
+sw/bootloader/neorv32_bootrom_image.vhd
+
+# Exercise 2 ships a precompiled binary on purpose (students configure the
+# CPU's ISA extensions, they don't compile this firmware themselves) -
+# keep it tracked despite the blanket *.bin ignore above.
+!exercises/ejercicio2/sw/neorv32_exe.bin
+
+# Vivado project artifacts (each student/group creates their own project
+# locally by following README.md - do not commit generated project files)
+*.xpr
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.str/
+vivado*.log
+vivado*.jou
+vivado*.str
+.Xil/
